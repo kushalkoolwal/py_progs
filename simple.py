@@ -8,11 +8,12 @@
 
 import sys
 
-# global variables should be in CAPS (3.1.1)
+# global variables should be in CAPS (3.1.1, 3.1.2/PEP8)
 SECONDS_IN_A_DAY = 60 * 60 * 24
 
 
-def myfunc(var):
+# variables and functions should be joined with underscore (3.1.2/PEP8)
+def my_func(var):
 	""" prints value stored in variable (3.2.1.2) """
 	print var
 
