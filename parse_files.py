@@ -43,7 +43,9 @@ def main():
 	if pattern.search:
 		print ('Match found')
 
-	
+	m = re.search('Kushal', "My name is Kushal Koolwal")
+	if m:
+		print (m.group(0)) # will print Kushal
 
 if __name__ == '__main__':
 	sys.exit(main())
