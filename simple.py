@@ -35,6 +35,10 @@ def main():
 	for num in num_list:
 		print num
 
+	# interate by index in for loop
+	for index in range(len(num_list)):
+		print 'Num:', num_list[index]
+
 	print calculate_mean(num_list)
 
 	# Tuples are read-only lists	
