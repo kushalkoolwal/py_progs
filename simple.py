@@ -20,7 +20,7 @@ def print_func(var):
 
 def calculate_mean (num_list):
 
-	return sum(num_list)
+	return sum(num_list) / len(num_list)
 
 # always create main function for your program (3.5.2)
 def main():
