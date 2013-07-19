@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 # Python notes based on Writing Idiomatic Python by Jeff Knupp
 # Use Python Package Index (PyPI)
