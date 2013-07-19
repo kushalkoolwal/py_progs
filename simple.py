@@ -6,7 +6,10 @@
 # Use itertools module
 # Use os.path module
 
+# use function-based version of print (1.3.3)
+from __future__ import print_function
 import sys
+
 
 # global variables should be in CAPS (3.1.1, 3.1.2/PEP8)
 SECONDS_IN_A_DAY = 60 * 60 * 24
@@ -15,7 +18,7 @@ SECONDS_IN_A_DAY = 60 * 60 * 24
 # variables and functions should be joined with underscore (3.1.2/PEP8)
 def print_func(var):
 	""" prints value stored in variable (3.2.1.2) """
-	print var
+	print (var)
 
 
 def calculate_mean (num_list):
@@ -27,28 +30,28 @@ def main():
 	str = 'Hello World'
 	print_func(str)
 
-	print SECONDS_IN_A_DAY
+	print (SECONDS_IN_A_DAY)
 
 	# Lists are like arrays
 	# use 'in' keyword for iterables (1.2.2)
 	num_list = [10, 20]
 	for num in num_list:
-		print num
+		print (num)
 
 	# interate by index in for loop
 	for index in range(len(num_list)):
-		print 'Num:', num_list[index]
+		print ('Num:', num_list[index])
 
-	print calculate_mean(num_list)
+	print (calculate_mean(num_list))
 
 	# Tuples are read-only lists	
 	name_tuple = ('Kushal', 'Koolwal', 'KK')
 	# use enumerate (1.2.1)
 	for name in enumerate(name_tuple):
-		print name
+		print (name)
 	# 'for' and 'while' loops have else statement (1.2.3)
 	else:
-		print "All names are were printed"
+		print ("All names are were printed")
 
 	# Success = 0; Error = Other
 	sys.exit(0)
