@@ -11,11 +11,19 @@ SECONDS_IN_A_DAY = 60 * 60 * 24
 
 
 def myfunc(var):
-""" prints value stored in variable (3.2.1.2) """
+	""" prints value stored in variable (3.2.1.2) """
 	print var
 
 
-str = 'Hello World'
-myfunc(str)
 
-print SECONDS_IN_A_DAY
+# Use the if __name__ == '__main__' pattern to allow a file to be both
+# imported and run directly (3.5.1)
+
+# Will only run if script is executed directly,
+# not when the file is imported as a module
+if __name__ == '__main__':
+	str = 'Hello World'
+	myfunc(str)
+
+	print SECONDS_IN_A_DAY
+	
