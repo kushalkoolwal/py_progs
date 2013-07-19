@@ -1,5 +1,9 @@
 #!/usr/bin/python
 
-str = 'Hello World'
-print str
 
+def myfunc(var):
+
+	print var
+
+str = 'Hello World'
+myfunc(str)
