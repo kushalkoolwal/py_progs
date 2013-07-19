@@ -26,7 +26,8 @@ def main():
 	#	print (line)
 
 	# another way to read file line-by-line
-	pattern = '^Jul 16'
+	pattern = 'Jul 16' # use re.match for beginning of line only
+	#pattern = 'CRON' # use re.search to match anywhere
 	with open('syslog', 'r') as f:
 		for line in f:
 			if re.match(pattern, line):
