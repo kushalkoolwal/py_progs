@@ -11,7 +11,7 @@ SECONDS_IN_A_DAY = 60 * 60 * 24
 
 
 def myfunc(var):
-
+""" prints value stored in variable (3.2.1.2) """
 	print var
 
 
