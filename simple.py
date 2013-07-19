@@ -25,6 +25,14 @@ def calculate_mean (num_list):
 
 	return sum(num_list) / len(num_list)
 
+
+def swap (a, b):
+	# no need to use extra variable (2.1.1)
+	(a, b) = (b, a)
+	print (a, b)
+	# python returns multiple values as tuples
+	return a, b
+
 # always create main function for your program (3.5.2)
 def main():
 	str = 'Hello World'
@@ -52,6 +60,11 @@ def main():
 	# 'for' and 'while' loops have else statement (1.2.3)
 	else:
 		print ("All names are were printed")
+
+	num1 = 5
+	num2 = 6
+	swap(num1, num2)
+	print (num1, num2)
 
 	# Success = 0; Error = Other
 	sys.exit(0)
