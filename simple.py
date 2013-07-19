@@ -30,6 +30,10 @@ def main():
 	print SECONDS_IN_A_DAY
 
 	num_list =[10, 20]
+
+	for num in num_list:
+		print num
+
 	result = calculate_mean(num_list)
 	print result
 	# Success = 0; Error = Other
