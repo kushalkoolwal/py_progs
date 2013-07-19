@@ -13,7 +13,7 @@ SECONDS_IN_A_DAY = 60 * 60 * 24
 
 
 # variables and functions should be joined with underscore (3.1.2/PEP8)
-def my_func(var):
+def print_func(var):
 	""" prints value stored in variable (3.2.1.2) """
 	print var
 
@@ -21,7 +21,7 @@ def my_func(var):
 # always create main function for your program (3.5.2)
 def main():
 	str = 'Hello World'
-	myfunc(str)
+	print_func(str)
 
 	print SECONDS_IN_A_DAY
 
