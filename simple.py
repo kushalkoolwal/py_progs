@@ -35,6 +35,10 @@ def swap (a, b):
 
 # always create main function for your program (3.5.2)
 def main():
+	""" main function of the program """
+	num1 = 5
+	num2 = 6
+
 	str = 'Hello World'
 	print_func(str)
 
@@ -55,14 +59,12 @@ def main():
 	# Tuples are read-only lists	
 	name_tuple = ('Kushal', 'Koolwal', 'KK')
 	# use enumerate (1.2.1)
-	for name in enumerate(name_tuple):
-		print (name)
+	for index, name in enumerate(name_tuple):
+		print ('{} {}'.format(index, name))
 	# 'for' and 'while' loops have else statement (1.2.3)
 	else:
 		print ("All names are were printed")
 
-	num1 = 5
-	num2 = 6
 	swap(num1, num2)
 	print (num1, num2)
 
