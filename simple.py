@@ -65,6 +65,12 @@ def main():
 	else:
 		print ("All names are were printed")
 
+
+	# Dictionaries are like hash table
+	phonebook = {} #empty dictionaries
+	phonebook = {'David':'111-222-3333', 'John':'444-555-6666'}
+	print (phonebook)
+
 	swap(num1, num2)
 	print (num1, num2)
 
