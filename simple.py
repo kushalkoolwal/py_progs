@@ -69,7 +69,12 @@ def main():
 	# Dictionaries are like hash table
 	phonebook = {} #empty dictionaries
 	phonebook = {'David':'111-222-3333', 'John':'444-555-6666'}
+	
+	# add an entry
+	phonebook['Sue'] = '777-888-9999'
 	print (phonebook)
+	print (phonebook.keys())
+	print (phonebook.values())
 
 	swap(num1, num2)
 	print (num1, num2)
