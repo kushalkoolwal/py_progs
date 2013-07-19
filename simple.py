@@ -6,7 +6,7 @@
 # Use itertools module
 # Use os.path module
 
-# global variables should be in CAPS
+# global variables should be in CAPS (3.1)
 SECONDS_IN_A_DAY = 60 * 60 * 24
 
 def myfunc(var):
