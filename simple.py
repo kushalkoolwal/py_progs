@@ -34,8 +34,8 @@ def main():
 	for num in num_list:
 		print num
 
-	result = calculate_mean(num_list)
-	print result
+
+	print calculate_mean(num_list)
 
 	# Tuples are read-only lists
 	name_tuple = ('Kushal', 'Koolwal', 'KK')
