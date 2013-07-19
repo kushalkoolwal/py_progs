@@ -18,6 +18,10 @@ def print_func(var):
 	print var
 
 
+def calculate_mean (num_list):
+
+	return sum(num_list)
+
 # always create main function for your program (3.5.2)
 def main():
 	str = 'Hello World'
@@ -25,6 +29,9 @@ def main():
 
 	print SECONDS_IN_A_DAY
 
+	num_list =[10, 20]
+	result = calculate_mean(num_list)
+	print result
 	# Success = 0; Error = Other
 	sys.exit(0)
 
