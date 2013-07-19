@@ -10,17 +10,22 @@ def main():
 	# open the file
 	file = open('syslog')
 
-	#reads only one line
-	log_data = file.readline()
-
-	# reads entire file
+	# reads entire file into memory
+	# not good for large files
 	log_data = file.readlines()
 
-
-	print(log_data)
+	#log_data = file..readlines()[4:] # skips first 4 lines
 
 	# close the file
 	file.close
+
+	print(log_data)
+
+	# read file line-by-line
+	for line in open('syslog', 'r'):
+		print (line)
+	
+
 
 if __name__ == '__main__':
 	sys.exit(main())
