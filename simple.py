@@ -30,17 +30,21 @@ def main():
 	print SECONDS_IN_A_DAY
 
 	# Lists are like arrays
+	# use 'in' keyword for iterables (1.2.2)
 	num_list = [10, 20]
 	for num in num_list:
 		print num
 
-
 	print calculate_mean(num_list)
 
-	# Tuples are read-only lists
+	# Tuples are read-only lists	
 	name_tuple = ('Kushal', 'Koolwal', 'KK')
+	# use enumerate (1.2.1)
 	for name in enumerate(name_tuple):
 		print name
+	# 'for' and 'while' loops have else statement (1.2.3)
+	else:
+		print "All names are were printed"
 
 	# Success = 0; Error = Other
 	sys.exit(0)
