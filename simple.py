@@ -76,6 +76,9 @@ def main():
 	print (phonebook.keys())
 	print (phonebook.values())
 
+	if phonebook.has_key('Sue'):
+		print ('Sue number is', phonebook['Sue'])
+
 	swap(num1, num2)
 	print (num1, num2)
 
